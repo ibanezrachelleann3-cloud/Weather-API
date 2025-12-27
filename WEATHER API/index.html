@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Character encoding -->
+  <meta charset="UTF-8" />
+
+  <!-- Title shown in browser tab -->
+  <title>Weather App</title>
+
+  <!-- Link to external CSS file -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="day"> <!-- Default theme is DAY -->
+
+  <!-- Main app container -->
+  <div class="app">
+    <h1>🌤 Weather App</h1>
+
+    <!-- Search section -->
+    <div class="search-box">
+      <!-- Input for city name -->
+      <input type="text" id="cityInput" placeholder="Enter city name" />
+
+      <!-- Button to get weather -->
+      <button id="getWeatherBtn">Search</button>
+
+      <!-- Button to toggle day/night mode -->
+      <button id="toggleTheme">🌙</button>
+    </div>
+
+    <!-- Current weather output -->
+    <div id="weather" class="weather"></div>
+
+    <!-- Forecast output -->
+    <div id="forecast" class="forecast"></div>
+  </div>
+
+  <!-- Link to JavaScript file -->
+  <script src="script.js"></script>
+</body>
+</html>

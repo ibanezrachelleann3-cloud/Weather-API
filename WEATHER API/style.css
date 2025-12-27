@@ -1,0 +1,94 @@
+/* Reset default spacing and set font */
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Center the app on screen */
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* DAY MODE theme */
+body.day {
+  background: linear-gradient(to bottom, #87ceeb, #ffffff);
+  color: #000;
+}
+
+/* NIGHT MODE theme */
+body.night {
+  background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
+  color: #fff;
+}
+
+/* Main app card */
+.app {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 25px;
+  border-radius: 15px;
+  width: 350px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+}
+
+/* Search input and buttons */
+.search-box {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+/* City input field */
+.search-box input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+}
+
+/* Buttons styling */
+.search-box button {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Weather icon size */
+.weather img {
+  width: 80px;
+}
+
+/* Forecast container */
+.forecast {
+  display: flex;
+  overflow-x: auto;
+  gap: 10px;
+}
+
+/* Each forecast card */
+.forecast-card {
+  background: rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  border-radius: 10px;
+  min-width: 80px;
+}
+
+/* Forecast icon size */
+.forecast-card img {
+  width: 40px;
+}
+
+/* Forecast card text */
+.forecast-card p {
+  font-size: 12px;
+  margin: 4px 0;
+  white-space: nowrap;
+  text-align: center;
+}
+
